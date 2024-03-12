@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <h2>Settings</h2>
+    <label for="increment">Increment Value:</label>
+    <input type="number" id="increment" min="1" max="10">
+    <br>
+    <label for="limit">Limit:</label>
+    <input type="number" id="limit" min="-50" max="50">
+    <br>
+    <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">Decrement</button>
+    <button onclick="saveSettings()">Save Settings</button>
+    <br>
+    <div id="currentSettings">
+        Current Increment Value: <span id="currentIncrement"></span><br>
+        Current Limit: <span id="currentLimit"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
